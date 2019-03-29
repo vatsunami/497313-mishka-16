@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alex Var](https://up.htmlacademy.ru/adaptive/16/user/497313).
-* Наставник: [Vladislav Balabanovich](https://htmlacademy.ru/profile/balabanovich)
+* Наставник: [Vladislav Balabanovich](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
