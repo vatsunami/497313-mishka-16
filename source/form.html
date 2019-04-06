@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Mishka">
+      <a class="page-header__logo logo" href="index.html">
+        <img src="img/logo.svg" alt="Mishka">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -21,7 +21,91 @@
       <a class="page-header__cart" href="#">Корзина: пока пуста</a>
     </header>
 
-    <main class="page-inner"></main>
+    <main class="page-inner">
+
+      <section class="order">
+        <h1 class="order__title page-title">Вязание на заказ</h1>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+          и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form form-order" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form-group">
+            <legend class="form-group__name">Тип</legend>
+            <ul class="form-group__radio-list">
+              <li class="form-group__radio-item">
+                <input class="visually-hidden" type="radio" name="type" value="accessory" id="accessory" checked>
+                <label class="form-group__label" for="accessory">Аксессуар для интерьера</label>
+              </li>
+              <li class="form-order__radio-item">
+                <input class="visually-hidden" type="radio" name="type" value="toy" id="toy">
+                <label class="form-group__label" for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-name">Цвет</legend>
+            <ul class="form-group__checkbox-list">
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+                <label class="form-group__label" for="white">Белый</label>
+              </li>
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
+                <label class="form-group__label" for="grey">Серый</label>
+              </li>
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                <label class="form-group__label" for="tiffany">&laquo;Тиффани&raquo;/серый</label>
+              </li>
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="black" id="black">
+                <label class="form-group__label" for="black">Черный</label>
+              </li>
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                <label class="form-group__label" for="pink">Розовый</label>
+              </li>
+              <li class="form-group__checkbox-item">
+                <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+                <label class="form-group__label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__name">Фио</legend>
+            <ul class="form-group__field-list">
+              <li class="form-group__field-item">
+                <label class="form-group__label" for="name">Имя:</label>
+                <input class="form-group__field" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="form-group__field-item">
+                <label class="form-group__label" for="surname">Фамилия:</label>
+                <input class="form-group__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form-group__field-item">
+                <label class="form-group__label" for="patronymic">Отчество:</label>
+                <input class="form-group__field" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__name">Тел</legend>
+            <input class="form-group__field" type="text" name="phone" placeholder="+7 XXX XXX XX XX*">
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__name">Email</legend>
+            <input class="form-group__field" type="text" name="e-mail" placeholder="Ваш Email*">
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__name">Доп</legend>
+            <textarea class="form-group__message" name="message" rows="8" cols="80"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <small class="form-group__small-text">*Поля обязательные для заполнения</small>
+          <button class="button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__social social">
