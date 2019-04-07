@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
-        <img src="img/logo.svg" alt="Mishka">
+        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35">
       </a>
+      <button class="page-header__menu" type="button">Показать меню</button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a>Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
       <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
@@ -23,51 +25,59 @@
 
     <main class="page-inner">
       <section class="product">
-        <h1 class="product__title page-title">Каталог товаров</h1>
-        <ul class="product__list">
-          <li class="product__item">
-            <a class="product__picture" href="#">
-              <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__name">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="product__parameters">Рост 30 см, вес 20 г</p>
-            <b class="product__price">1200 руб.</b>
-            <a class="product__cart" href="cart.html">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
-          </li>
-          <li class="product__item">
-            <a class="product__picture">
-              <img src="http://placehold.it/150x100" alt="Корзинка для белья">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__name">Корзинка для белья</h3>
-            </a>
-            <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-            <b class="product__price">690 руб.</b>
-            <a class="product__cart" href="cart.html">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
-          </li>
-          <li class="product__item">
+        <h1 class="product__title page-title title">Каталог товаров</h1>
+        <div class="container">
+          <ul class="product__list">
+            <li class="product__item">
+              <a class="product__picture" href="#">
+                <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </a>
+              <div class="product__wrapper">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="product__parameters">Рост 30 см, вес 20 г</p>
+                <b class="product__price">1200 руб.</b>
+                <a class="product__cart" href="cart.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </li>
+            <li class="product__item">
               <a class="product__picture">
-                <img src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+                <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
               </a>
-              <a class="product__link" href="#">
-                <h3 class="product__name">Большая корзинка для игрушек</h3>
+              <div class="product__wrapper">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">Корзинка для белья</h3>
+                </a>
+                <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
+                <b class="product__price">690 руб.</b>
+                <a class="product__cart" href="cart.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a class="product__picture">
+                <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
               </a>
-              <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
-              <b class="product__price">1500 руб.</b>
-              <a class="product__cart" href="cart.html">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
-          </li>
-        </ul>
+              <div class="product__wrapper">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">Большая корзинка для игрушек</h3>
+                </a>
+                <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
+                <b class="product__price">1500 руб.</b>
+                <a class="product__cart" href="cart.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="production">
-        <h2 class="production__title">Процесс производства</h2>
+        <h2 class="production__title title">Процесс производства</h2>
 
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.</p>
@@ -76,29 +86,33 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <b class="visually-hidden">Мы в социальных сетях</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
+      <div class="container">
+        <div class="page-footer__social social">
+          <b class="visually-hidden">Мы в социальных сетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">htmlacademy.ru</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
-        <img src="img/logo.svg" alt="Mishka">
+        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35">
       </a>
+      <button class="page-header__menu" type="button">Показать меню</button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Каталог товаров</a></li>
-          <li class="site-list__item"><a>Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link">Вязание на заказ</a></li>
         </ul>
       </nav>
       <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
@@ -24,7 +26,7 @@
     <main class="page-inner">
 
       <section class="order">
-        <h1 class="order__title page-title">Вязание на заказ</h1>
+        <h1 class="order__title page-title title">Вязание на заказ</h1>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
           и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form form-order" action="https://echo.htmlacademy.ru" method="post">
@@ -41,8 +43,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__group-name">Цвет</legend>
+          <fieldset class="form-group">
+            <legend class="form-group__name">Цвет</legend>
             <ul class="form-group__checkbox-list">
               <li class="form-group__checkbox-item">
                 <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
@@ -101,36 +103,40 @@
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <small class="form-group__small-text">*Поля обязательные для заполнения</small>
-          <button class="button" type="submit">Отправить заказ</button>
+          <button class="form-group__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <b class="visually-hidden">Мы в социальных сетях</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
+      <div class="container">
+        <div class="page-footer__social social">
+          <b class="visually-hidden">Мы в социальных сетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">htmlacademy.ru</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
