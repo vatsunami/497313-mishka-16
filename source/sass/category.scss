@@ -1,0 +1,45 @@
+.category__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category__link {
+  padding: 27px 30px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.category__link--toys {
+  display: block;
+  background-color: #56c3b2;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #46c1ae;
+  }
+}
+
+.category__link--interior {
+  display: block;
+  background-color: #63d1bb;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #59d5bc;
+  }
+}
+
+.category__name {
+  margin: 0;
+  width: 150px;
+}
