@@ -1,0 +1,66 @@
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__author-insta {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__author-insta {
+    display: block;
+  }
+
+  .reviews .container {
+    position: relative;
+    width: 768px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  .reviews {
+    width: 1050px;
+  }
+
+  .reviews .container {
+    box-sizing: border-box;
+    width: 1050px;
+    padding-left: 175px;
+  }
+}
