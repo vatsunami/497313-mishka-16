@@ -2,25 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35">
-      </a>
-      <button class="page-header__menu" type="button">Показать меню</button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-        </ul>
-      </nav>
-      <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="page-header__search" type="search" name="search" placeholder="Поиск по сайту">
-      </form>
-      <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+      <div class="container">
+        <a class="page-header__logo logo" href="index.html">
+          <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35">
+        </a>
+        <button class="page-header__menu" type="button">Показать меню</button>
+        <nav class="main-nav">
+          <ul class="main-nav__list main-nav__list--top site-list">
+            <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--bottom site-list">
+            <li class="site-list__item"><a class="site-list__link" href="#">Новые поступления</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Распродажа</a></li>
+          </ul>
+        </nav>
+        <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="page-header__search" type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+        <a class="page-header__cart" href="#">Корзина: пока пуста</a>
+        <p class="page-header__text">Бесплатная доставка по России</p>
+      </div>
     </header>
 
     <main class="page-inner">
@@ -87,6 +96,9 @@
 
     <footer class="page-footer">
       <div class="container">
+        <a class="page-footer__logo logo" href="index.html">
+          <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35">
+        </a>
         <div class="page-footer__social social">
           <b class="visually-hidden">Мы в социальных сетях</b>
           <ul class="social__list">

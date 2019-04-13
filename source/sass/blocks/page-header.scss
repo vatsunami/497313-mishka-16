@@ -1,0 +1,51 @@
+.page-header__search {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+}
+
+.page-header__cart {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 88px;
+  }
+
+  .page-header .container {
+    position: relative;
+    display: flex;
+  }
+
+  .page-header__menu {
+    display: none;
+  }
+
+  .page-header__text {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}

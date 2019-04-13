@@ -1,0 +1,19 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 185px;
+  }
+}

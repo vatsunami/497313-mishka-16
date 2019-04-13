@@ -1,0 +1,14 @@
+.social__list {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+}
