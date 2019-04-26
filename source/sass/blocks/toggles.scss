@@ -1,0 +1,114 @@
+.toggles {
+  box-sizing: border-box;
+  display: flex;
+  width: 260px;
+}
+
+.toggles__button {
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
+  padding: 23px 0;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  outline: none;
+
+  &:hover .toggles__arrow,
+  &:focus .toggles__arrow {
+    opacity: 0.6;
+  }
+
+  &:active .toggles__arrow {
+    opacity: 0.3;
+  }
+}
+
+.toggles__button--prev {
+  padding-right: 2px;
+  border-right: none;
+}
+
+.toggles__button--next {
+  padding-right: 4px;
+}
+
+.toggles__arrow {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin: 0;
+  background-color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 4px;
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 4px;
+    background-color: #000000;
+  }
+}
+
+.toggles__arrow--prev {
+  margin: 0 auto;
+
+  &::before {
+    top: -5px;
+    left: -3px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    top: 5px;
+    left: -3px;
+    transform: rotate(45deg);
+  }
+}
+
+.toggles__arrow--next {
+  margin: 0 auto;
+
+  &::before {
+    top: -5px;
+    right: -3px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 5px;
+    right: -3px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .toggles {
+    width: 174px;
+  }
+
+  .toggles__button {
+    width: 87px;
+    border: none;
+  }
+
+  .toggles__button--prev {
+    padding-left: 20px;
+    border-right: none;
+  }
+
+  .toggles__button--next {
+    padding-left: 18px;
+  }
+}

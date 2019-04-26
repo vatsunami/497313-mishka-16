@@ -1,11 +1,35 @@
-.page-header__search {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  border: none;
+.page-header {
+  box-sizing: border-box;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  min-height: 80px;
+  margin-bottom: 316px;
+}
+
+.page-header__container {
+  position: relative;
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.page-header__menu-button {
+  display: none;
+}
+
+.page-header__menu {
+  display: block;
+  position: absolute;
+  top: 79px;
+  left: 0;
+}
+
+.page-header__logo {
+  display: block;
 }
 
 .page-header__cart {
+  display: block;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -28,12 +52,8 @@
 
 @media (min-width: 768px) {
   .page-header {
-    min-height: 88px;
-  }
-
-  .page-header .container {
-    position: relative;
-    display: flex;
+    min-height: 89px;
+    margin-bottom: 0;
   }
 
   .page-header__menu {
