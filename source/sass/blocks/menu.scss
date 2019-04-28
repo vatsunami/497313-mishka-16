@@ -1,0 +1,29 @@
+.menu {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 20;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.menu__item {
+  box-sizing: border-box;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #ececec;
+}
+
+.menu__item-container {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}

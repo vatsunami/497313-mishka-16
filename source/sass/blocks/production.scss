@@ -1,0 +1,160 @@
+.production {
+  padding-top: 1px;
+  padding-bottom: 58px;
+}
+
+.production__container {
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.production__wrapper {
+  border: 1px solid #ececec;
+}
+
+.production__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production__top {
+  display: flex;
+  padding: 23px 33px 24px;
+}
+
+.production__icon-video {
+  flex-shrink: 0;
+  padding-top: 6px;
+  margin-right: 24px;
+}
+
+.production__video {
+  margin: 0;
+  background-color: #ececec;
+}
+
+.production__video img {
+  display: block;
+  width: 100%;
+}
+
+.production__bottom {
+  padding: 28px 33px 32px;
+}
+
+.production__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .production {
+    padding-top: 0;
+    padding-bottom: 63px;
+  }
+
+  .production__container {
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+
+  .production__top {
+    padding: 32px 41px 24px;
+    border: 1px solid #ececec;
+    border-bottom: none;
+  }
+
+  .production__icon-video {
+    margin-right: 32px;
+    padding: 0;
+  }
+
+  .production__title {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .production__video img {
+    min-height: 455px;
+  }
+
+  .production__bottom {
+    padding: 5px 41px 45px;
+    border: 1px solid #ececec;
+    border-top: none;
+  }
+
+  .production__text {
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__video {
+    order: -1;
+    min-height: 455px;
+  }
+
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .production {
+    padding-top: 3px;
+    padding-bottom: 105px;
+  }
+
+  .production__container {
+    width: 1050px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .production__wrapper {
+    position: relative;
+  }
+
+  .production__top {
+    flex-direction: column;
+    margin-left: 682px;
+    padding: 41px 77px 24px;
+  }
+
+  .production__title {
+    padding-top: 0;
+  }
+
+  .production__icon-video {
+    margin-right: 0;
+    margin-bottom: 22px;
+    padding-left: 2px;
+  }
+
+  .production__bottom {
+    margin-left: 682px;
+    padding: 9px 57px 59px 77px;
+  }
+
+  .production__text {
+    margin-bottom: 46px;
+  }
+
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 682px;
+  }
+}

@@ -1,0 +1,83 @@
+.menu-link {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  outline: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  opacity: 0.6;
+}
+
+.menu-link:active {
+  opacity: 0.3;
+}
+
+.menu-link--cart:hover,
+.menu-link--cart:focus,
+.menu-link--search:hover,
+.menu-link--search:focus,
+.menu-link--cart:active,
+.menu-link--search:active {
+  opacity: 1;
+}
+
+.menu-link--cart:hover .menu-link__text,
+.menu-link--cart:focus .menu-link__text,
+.menu-link--search:hover .menu-link__text,
+.menu-link--search:focus .menu-link__text {
+  opacity: 0.6;
+}
+
+.menu-link--cart:focus .menu-link__text,
+.menu-link--search:focus .menu-link__text {
+  opacity: 0.3;
+}
+
+.menu-link--cart,
+.menu-link--search {
+  position: relative;
+}
+
+.menu-link__icon {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.menu-link__icon--cart {
+  top: 4px;
+  left: 0;
+}
+
+.menu-link__icon--search {
+  top: 5px;
+  left: 2px;
+}
+
+.menu-link--cart:hover .menu-link__icon,
+.menu-link--cart:focus .menu-link__icon,
+.menu-link--search:hover .menu-link__icon,
+.menu-link--search:focus .menu-link__icon {
+  opacity: 1;
+}
+
+.menu-link--cart:active .menu-link__icon,
+.menu-link--search:active .menu-link__icon {
+  opacity: 0.3;
+}
+
+.menu-link--cart:hover .menu-link__icon-path,
+.menu-link--cart:focus .menu-link__icon-path,
+.menu-link--search:hover .menu-link__icon-path,
+.menu-link--search:focus .menu-link__icon-path,
+.menu-link--cart:active .menu-link__icon-path,
+.menu-link--search:active .menu-link__icon-path {
+  fill: #62d1ba;
+}
