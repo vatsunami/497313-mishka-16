@@ -5,14 +5,14 @@
   color: #000000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .title {
     font-size: 43px;
     line-height: 50px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .title {
     font-size: 53px;
     line-height: 57px;

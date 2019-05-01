@@ -36,7 +36,7 @@
   fill: #63d1bb;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .copyright {
     width: 184px;
     padding: 0;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .copyright__icon-htmlacademy {
     margin-right: 1px;
   }

@@ -93,7 +93,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .toggles {
     width: 174px;
   }
@@ -103,12 +103,12 @@
     border: none;
   }
 
-  .toggles__button--prev {
+  &--prev {
     padding-left: 20px;
     border-right: none;
   }
 
-  .toggles__button--next {
+  &--next {
     padding-left: 18px;
   }
 }

@@ -26,7 +26,7 @@
   background-color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .order-details {
     padding-top: 61px;
     padding-bottom: 50px;
@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .order-details {
     padding-top: 105px;
   }

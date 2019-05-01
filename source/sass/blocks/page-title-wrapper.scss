@@ -6,7 +6,7 @@
   background-color: #f1f1f1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-title-wrapper {
     padding-top: 95px;
     padding-bottom: 91px;
@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .page-title-wrapper {
     padding-top: 93px;
     padding-bottom: 120px;

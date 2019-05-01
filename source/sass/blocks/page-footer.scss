@@ -16,7 +16,7 @@
   box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 43px;
     padding-bottom: 40px;
@@ -34,7 +34,9 @@
   }
 
   .page-footer__logo img {
-    margin: 0;
+    width: 104px;
+    height: 34px;
+    padding-top: 8px;
   }
 
   .page-footer__social {
@@ -44,7 +46,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .page-footer__container {
     width: 1050px;
     padding: 0;

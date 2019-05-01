@@ -1,8 +1,9 @@
+.logo {
+  display: block;
+}
+
 .logo img {
   display: block;
-  width: 86px;
-  height: 35px;
-  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -12,8 +13,4 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.logo {
-  display: block;
 }

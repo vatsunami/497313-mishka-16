@@ -1,6 +1,7 @@
 @import "normalize.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "variables.scss";
 @import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
@@ -12,8 +13,6 @@
 @import "blocks/menu-button.scss";
 @import "blocks/menu-link.scss";
 @import "blocks/logo.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/site-nav.scss";
 @import "blocks/promo-block.scss";
 @import "blocks/page-title-wrapper.scss";
 @import "blocks/page-title.scss";
@@ -30,5 +29,5 @@
 @import "blocks/product.scss";
 @import "blocks/production.scss";
 @import "blocks/form-group.scss";
-@import "blocks/modal.scss";
+@import "blocks/modal-cart.scss";
 @import "blocks/order-details.scss";

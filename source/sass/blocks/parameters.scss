@@ -11,22 +11,21 @@
   font-size: 15px;
   line-height: 20px;
   padding-top: 9px;
-  // padding-right: 27px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+
+  &--field {
+    width: 95px;
+  }
 }
 
-.parameters__data--field {
-  width: 95px;
-}
-
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .parameters__data {
     padding-right: 0;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .parameters__data {
     padding-top: 7px;
     padding-bottom: 12px;

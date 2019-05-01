@@ -6,28 +6,44 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
+  background-size: 575px auto;
 }
 
-@media (min-width: 768px) {
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .promo-block {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
   .promo-block {
     min-height: 626px;
-    padding: 153px 100px 0;
+    padding: 0;
+    padding-top: 153px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center -1px;
+    background-size: 1150px auto;
   }
 
-  .promo-block__title {
-    padding-top: 124px;
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .promo-block {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo-block {
     min-height: 626px;
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 
-  .promo-block__title {
-    padding-top: 117px;
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .promo-block {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }
