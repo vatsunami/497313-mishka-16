@@ -35,8 +35,10 @@
 
 .form-group__name {
   position: relative;
+  box-sizing: border-box;
   display: block;
   width: 100%;
+  margin: 0;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -47,8 +49,8 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: 0;
-    width: 100%;
+    left: 62px;
+    width: calc(100% - 62px);
     height: 1px;
     background-color: #63d1bb;
   }
@@ -71,6 +73,11 @@
 
   &--mail {
     margin-bottom: 5px;
+
+    &::after {
+      left: 81px;
+      width: calc(100% - 81px);
+    }
   }
 
   &--message {
@@ -245,27 +252,29 @@
   position: relative;
 }
 
-.form-group__icon-phone {
+.form-group__icon {
   position: absolute;
-  top: 11px;
-  right: 8px;
-  width: 25px;
-  height: 24px;
-}
 
-.form-group__icon-mail {
-  position: absolute;
-  top: 11px;
-  right: 4px;
-  width: 32px;
-  height: 32px;
+  &--phone {
+    top: 11px;
+    right: 8px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--mail {
+    top: 11px;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .form-group__field {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 16px 0;
+  padding: 16px 40px 16px 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -275,7 +284,7 @@
   outline: none;
 
   &--phone {
-    padding: 13px 0 14px;
+    padding: 13px 40px 14px 0;
     font-size: 19px;
     line-height: 23px;
   }
@@ -286,17 +295,14 @@
   }
 }
 
-.form-group__field + .form-group__icon-phone,
-.form-group__field + .form-group__icon-mail {
+.form-group__field + .form-group__icon {
   path {
     fill: #cccccc;
   }
 }
 
-.form-group__field:hover + .form-group__icon-phone,
-.form-group__field:focus + .form-group__icon-phone,
-.form-group__field:hover + .form-group__icon-mail,
-.form-group__field:focus + .form-group__icon-mail {
+.form-group__field:hover + .form-group__icon,
+.form-group__field:focus + .form-group__icon {
   path {
     fill: #63d1bb;
   }
@@ -320,9 +326,11 @@
   }
 }
 
-.form-group__message::placeholder,
-.form-group__field::placeholder {
-  color: rgba(69, 68, 68, 0.3);
+.form-group__message,
+.form-group__field {
+  &::placeholder {
+    color: rgba(69, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -354,8 +362,8 @@
 
   .form-group__container {
     box-sizing: border-box;
-    padding: 0 50px;
     flex-direction: row;
+    padding: 0 50px;
   }
 
   .form-group__label {
@@ -464,7 +472,7 @@
   }
 
   .form-group__checkbox-item {
-    width: 239px;
+    width: 50%;
     margin-bottom: 54px;
   }
 
@@ -523,7 +531,7 @@
   }
 
   .form-group__field {
-    padding: 15px 17px;
+    padding: 15px 70px 15px 17px;
     font-size: 19px;
     line-height: 22px;
 
@@ -531,6 +539,18 @@
     &--mail {
       width: 100%;
       background-color: #f1f1f1;
+    }
+  }
+
+  .form-group__icon {
+    &--phone {
+      top: 13px;
+      right: 26px;
+    }
+
+    &--mail {
+      top: 13px;
+      right: 22px;
     }
   }
 }
@@ -587,6 +607,7 @@
     }
 
     &--user {
+      width: 176px;
       padding-left: 61px;
     }
 
@@ -606,9 +627,20 @@
     }
   }
 
-  .form-group__icon-phone,
-  .form-group__icon-mail {
+  .form-group__field {
+    padding-right: 45px;
+  }
+
+  .form-group__icon {
     top: 13px;
+
+    &--phone {
+      right: 8px;
+    }
+
+    &--mail {
+      right: 4px;
+    }
   }
 
   .form-group__message {

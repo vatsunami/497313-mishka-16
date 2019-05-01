@@ -23,6 +23,7 @@
 
 .order-details__button {
   width: 100%;
+  letter-spacing: normal;
   background-color: #ffffff;
 }
 
@@ -37,9 +38,9 @@
   }
 
   .order-details__text {
-    width: 668px;
     margin: 0 auto;
     margin-bottom: 70px;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
