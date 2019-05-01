@@ -29,6 +29,10 @@
   margin-right: 24px;
 }
 
+.production__icon-video-path {
+  fill: #63d1bb;
+}
+
 .production__video {
   margin: 0;
   background-color: #ececec;
@@ -54,7 +58,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .production {
     padding-top: 0;
     padding-bottom: 63px;
@@ -110,7 +114,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .production {
     padding-top: 3px;
     padding-bottom: 105px;

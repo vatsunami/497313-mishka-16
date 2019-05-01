@@ -54,7 +54,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reviews {
     width: 100%;
     padding-top: 0;
@@ -65,11 +65,18 @@
     position: relative;
     box-sizing: border-box;
     min-height: 457px;
-    padding: 77px 40px 51px 40px;
+    padding: 77px 40px 51px;
     background-image: url("../img/review@1x.jpg");
-    background-size: auto 457px;
+    background-size: 350px auto;
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .reviews__container {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
@@ -112,7 +119,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .reviews {
     padding-bottom: 90px;
   }

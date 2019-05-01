@@ -47,6 +47,8 @@
 .product-week__picture img {
   display: block;
   width: 100%;
+  height: auto;
+  min-height: 315px;
   background-color: #f1f1f1;
 }
 
@@ -64,7 +66,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .product-week {
     padding-top: 45px;
     padding-bottom: 69px;
@@ -140,7 +142,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .product-week {
     padding-top: 71px;
     padding-bottom: 96px;
