@@ -254,6 +254,8 @@
 
 .form-group__icon {
   position: absolute;
+  fill: #000000;
+  opacity: 0.2;
 
   &--phone {
     top: 11px;
@@ -295,17 +297,10 @@
   }
 }
 
-.form-group__field + .form-group__icon {
-  path {
-    fill: #cccccc;
-  }
-}
-
 .form-group__field:hover + .form-group__icon,
 .form-group__field:focus + .form-group__icon {
-  path {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
+  opacity: 1;
 }
 
 .form-group__message {

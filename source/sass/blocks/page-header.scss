@@ -28,6 +28,16 @@
   width: 86px;
   height: 35px;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo img {

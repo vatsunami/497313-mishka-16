@@ -9,9 +9,9 @@
   text-decoration: none;
   outline: none;
 
-  &:hover .copyright__icon-htmlacedemy-path,
-  &:focus .copyright__icon-htmlacedemy-path,
-  &:active .copyright__icon-htmlacedemy-path {
+  &:hover .copyright__icon-htmlacademy,
+  &:focus .copyright__icon-htmlacademy,
+  &:active .copyright__icon-htmlacademy {
     fill: #46c1ae;
   }
 
@@ -30,9 +30,6 @@
   width: 27px;
   height: 34px;
   margin-right: 2px;
-}
-
-.copyright__icon-htmlacedemy-path {
   fill: #63d1bb;
 }
 

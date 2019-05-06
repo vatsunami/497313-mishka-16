@@ -60,6 +60,7 @@
 .category__icon {
   position: absolute;
   opacity: 0.5;
+  fill: #149080;
 
   &--interior {
     top: 23px;
@@ -70,11 +71,6 @@
     top: 20px;
     right: 27px;
   }
-}
-
-
-.category__icon-path {
-  fill: #149080;
 }
 
 @media (min-width: $tablet-width) {
