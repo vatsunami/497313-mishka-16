@@ -1,83 +1,167 @@
 .menu-link {
+  position: relative;
   box-sizing: border-box;
   display: block;
-  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 26px 0 28px;
   padding-left: 45px;
   font-size: 17px;
+  font-weight: 700;
   line-height: 24px;
-  font-weight: bold;
-  color: #000000;
   text-decoration: none;
-  outline: none;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--search:hover,
+  &--search:focus,
+  &--search:active,
+  &--cart:hover,
+  &--cart:focus,
+  &--cart:active {
+    opacity: 1;
+  }
+
+  &--search:hover .menu-link__text,
+  &--search:focus .menu-link__text,
+  &--cart:hover .menu-link__text,
+  &--cart:focus .menu-link__text {
+    opacity: 0.6;
+  }
+
+  &--search:active .menu-link__text,
+  &--cart:active .menu-link__text {
+    opacity: 0.3;
+  }
+
+  &--search:hover .menu-link__icon,
+  &--search:focus .menu-link__icon,
+  &--cart:hover .menu-link__icon,
+  &--cart:focus .menu-link__icon {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  &--search:active .menu-link__icon,
+  &--cart:active .menu-link__icon {
+    fill: #62d1ba;
+    opacity: 0.3;
+  }
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  opacity: 0.6;
-}
-
-.menu-link:active {
-  opacity: 0.3;
-}
-
-.menu-link--cart:hover,
-.menu-link--cart:focus,
-.menu-link--search:hover,
-.menu-link--search:focus,
-.menu-link--cart:active,
-.menu-link--search:active {
-  opacity: 1;
-}
-
-.menu-link--cart:hover .menu-link__text,
-.menu-link--cart:focus .menu-link__text,
-.menu-link--search:hover .menu-link__text,
-.menu-link--search:focus .menu-link__text {
-  opacity: 0.6;
-}
-
-.menu-link--cart:focus .menu-link__text,
-.menu-link--search:focus .menu-link__text {
-  opacity: 0.3;
-}
-
-.menu-link--cart,
-.menu-link--search {
-  position: relative;
+.menu-link__text {
+  display: block;
 }
 
 .menu-link__icon {
   position: absolute;
+  fill: #000000;
   opacity: 0.2;
+
+  &--search {
+    top: 31px;
+    left: 2px;
+  }
+
+  &--cart {
+    top: 30px;
+    left: 0;
+  }
 }
 
-.menu-link__icon--cart {
-  top: 4px;
-  left: 0;
+@media (min-width: $tablet-width) {
+  .menu-link {
+    max-width: none;
+  }
+
+  .menu-link--catalog {
+    margin-right: 36px;
+    padding: 18px 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .menu-link--knitting {
+    margin-right: 36px;
+    padding: 18px 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .menu-link--cart {
+    width: 265px;
+    text-align: right;
+    padding: 31px 0 33px;
+    border-left: 1px solid #ececec;
+  }
+
+  .menu-link--search {
+    width: 83px;
+    height: 88px;
+    padding: 0;
+    border-left: 1px solid #ececec;
+  }
+
+  .menu-link__text--search {
+    display: none;
+  }
+
+  .menu-link__icon {
+    position: absolute;
+
+    &--search {
+      top: 36px;
+      left: 33px;
+    }
+
+    &--cart {
+      top: 35px;
+      left: 31px;
+    }
+  }
 }
 
-.menu-link__icon--search {
-  top: 5px;
-  left: 2px;
-}
+@media (min-width: $desktop-width) {
+  .menu-link--cart {
+    width: 267px;
+    margin: 0;
+    padding: 31px 2px 33px 0;
+    font-size: 17px;
+    line-height: 24px;
+  }
 
-.menu-link--cart:hover .menu-link__icon,
-.menu-link--cart:focus .menu-link__icon,
-.menu-link--search:hover .menu-link__icon,
-.menu-link--search:focus .menu-link__icon {
-  opacity: 1;
-}
+  .menu-link--catalog {
+    width: 184px;
+    margin: 0;
+    padding: 31px 0 33px;
+    font-size: 17px;
+  }
 
-.menu-link--cart:active .menu-link__icon,
-.menu-link--search:active .menu-link__icon {
-  opacity: 0.3;
-}
+  .menu-link--knitting {
+    box-sizing: border-box;
+    width: 216px;
+    margin: 0;
+    padding: 31px 0 33px 34px;
+    font-size: 17px;
+  }
 
-.menu-link--cart:hover .menu-link__icon-path,
-.menu-link--cart:focus .menu-link__icon-path,
-.menu-link--search:hover .menu-link__icon-path,
-.menu-link--search:focus .menu-link__icon-path,
-.menu-link--cart:active .menu-link__icon-path,
-.menu-link--search:active .menu-link__icon-path {
-  fill: #62d1ba;
+  .menu-link--new {
+    padding: 18px 0;
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+  .menu-link--sale {
+    padding: 18px 0;
+    padding-left: 0;
+    font-size: 15px;
+  }
 }

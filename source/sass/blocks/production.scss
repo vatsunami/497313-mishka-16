@@ -10,6 +10,14 @@
 
 .production__wrapper {
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
@@ -25,17 +33,41 @@
 
 .production__icon-video {
   flex-shrink: 0;
-  padding-top: 6px;
   margin-right: 24px;
-}
-
-.production__icon-video-path {
+  padding-top: 6px;
   fill: #63d1bb;
 }
 
 .production__video {
   margin: 0;
   background-color: #ececec;
+}
+
+.production__video-player {
+  position: relative;
+}
+
+.production__video-play {
+  position: absolute;
+  top: calc(50% - 37.5px);
+  left: calc(50% - 50.5px);
+  display: block;
+  width: 101px;
+  height: 77px;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__video img {
@@ -86,10 +118,6 @@
     line-height: 24px;
   }
 
-  .production__video img {
-    min-height: 455px;
-  }
-
   .production__bottom {
     padding: 5px 41px 45px;
     border: 1px solid #ececec;
@@ -102,8 +130,12 @@
     line-height: 30px;
   }
 
-  .production__video {
+  .production__video-wrapper {
     order: -1;
+    min-height: 455px;
+  }
+
+  .production__video img {
     min-height: 455px;
   }
 
@@ -128,12 +160,14 @@
 
   .production__wrapper {
     position: relative;
+    padding-left: 681px;
+    border: 1px solid #ececec;
   }
 
   .production__top {
     flex-direction: column;
-    margin-left: 682px;
-    padding: 41px 77px 24px;
+    padding: 41px 78px 24px;
+    border: none;
   }
 
   .production__title {
@@ -147,18 +181,18 @@
   }
 
   .production__bottom {
-    margin-left: 682px;
-    padding: 9px 57px 59px 77px;
+    padding: 9px 57px 59px 78px;
+    border: none;
   }
 
   .production__text {
     margin-bottom: 46px;
   }
 
-  .production__video {
+  .production__video-wrapper {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     width: 682px;
   }
 }

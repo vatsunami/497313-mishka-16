@@ -8,15 +8,16 @@
 }
 
 .social__link {
+  position: relative;
   box-sizing: border-box;
   display: block;
   width: 60px;
   height: 60px;
   outline: none;
 
-  &:hover .social__icon-path,
-  &:focus .social__icon-path,
-  &:active .social__icon-path {
+  &:hover .social__icon,
+  &:focus .social__icon,
+  &:active .social__icon {
     fill: #46c1ae;
   }
 
@@ -26,19 +27,21 @@
 }
 
 .social__icon {
+  position: absolute;
+
   &--insta {
-    margin-top: 20px;
-    margin-left: 17px;
+    top: 19px;
+    left: 17px;
   }
 
   &--fb {
-    margin-top: 15px;
-    margin-left: 20px;
+    top: 15px;
+    left: 20px;
   }
 
   &--twitter {
-    margin-top: 20px;
-    margin-left: 14px;
+    top: 20px;
+    left: 15px;
   }
 }
 
@@ -46,5 +49,11 @@
   .social__list {
     margin: 0;
     padding: 0;
+  }
+
+  .social__icon {
+    &--insta {
+      top: 20px;
+    }
   }
 }

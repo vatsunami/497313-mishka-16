@@ -1,57 +1,112 @@
 .page-header {
-  box-sizing: border-box;
-  border-top: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+.page-header__menu {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.page-header__menu-item {
   border-bottom: 1px solid #ececec;
-  min-height: 80px;
-  margin-bottom: 316px;
 }
 
 .page-header__container {
   position: relative;
+}
+
+.page-header__logo-wrapper {
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 22px;
-}
-
-.page-header__menu-button {
-  display: none;
-}
-
-.page-header__menu {
-  display: block;
-  position: absolute;
-  top: 79px;
-  left: 0;
+  padding: 22px 0 23px;
+  box-shadow: inset 0 -1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
 .page-header__logo {
   display: block;
   width: 86px;
   height: 35px;
-}
-
-.page-header__logo img {
-  width: 86px;
-  height: 35px;
   margin: 0 auto;
-}
-
-.page-header__cart {
-  display: block;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
+}
+
+.page-header__logo img {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+.page-header__toggle-wrapper {
+  position: absolute;
+  top: 19px;
+  right: 21px;
+}
+
+.page-header__toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 13px;
+    left: 10px;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000,
+      0 12px 0 0 #000000;
+  }
+
+  &--close {
+    box-shadow: none;
+
+    &::before {
+      width: 27px;
+      height: 2px;
+      top: 19px;
+      left: 7px;
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 27px;
+      height: 2px;
+      top: 19px;
+      right: 6px;
+      background-color: #000000;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+// .page-header__menu--first,
+// .page-header__menu--second {
+//   display: none;
+// }
+
+.page-header__menu--third {
+  display: none;
 }
 
 .page-header__text {
@@ -60,17 +115,37 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 89px;
-    margin-bottom: 0;
+    height: 89px;
+    box-shadow: inset 0 -1px 0 #ececec;
   }
 
-  .page-header__container {
-    padding-bottom: 20px;
+  .page-header__toggle-wrapper {
+    display: none;
+  }
+
+  .page-header__menu-item {
+    border: none;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .page-header__logo-wrapper {
+    box-sizing: border-box;
+    width: 47.9%;
+    height: 88px;
+    padding: 22px 0 20px;
+    box-shadow: none;
   }
 
   .page-header__logo {
     width: 113px;
     height: 46px;
+    margin: 0;
   }
 
   .page-header__logo img {
@@ -78,23 +153,40 @@
     height: 46px;
   }
 
-  .page-header__menu {
-    display: none;
+  .page-header__menu--first {
+    display: flex;
+    background-color: inherit;
+    order: 2;
+  }
+
+  .page-header__menu--second {
+    display: flex;
   }
 
   .page-header__text {
-    position: absolute;
-    top: 88px;
-    right: 0;
     display: block;
+    order: 3;
     margin: 0;
-    padding: 0;
+    padding: 18px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__container {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .page-header__nav {
     padding: 0;
+  }
+
+  .page-header__logo-wrapper {
+    width: 149px;
+    height: 88px;
+    padding-top: 9px;
+    padding-bottom: 0;
+    order: 1;
   }
 
   .page-header__logo {
@@ -105,5 +197,32 @@
   .page-header__logo img {
     width: 149px;
     height: 72px;
+  }
+
+  .page-header__menu--first {
+    order: 0;
+  }
+
+  .page-header__menu--first .page-header__menu-item {
+    &:nth-of-type(2) {
+      border-left: 1px solid #ececec;
+    }
+  }
+
+  .page-header__menu--second {
+    box-sizing: border-box;
+    order: 2;
+    width: 400px;
+    padding-left: 50px;
+  }
+
+  .page-header__menu--third {
+    display: flex;
+    background-color: inherit;
+    order: 3;
+  }
+
+  .page-header__menu--third .page-header__menu-item {
+    margin-right: 61px;
   }
 }
