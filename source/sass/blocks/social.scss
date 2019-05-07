@@ -50,4 +50,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .social__icon {
+    &--insta {
+      top: 20px;
+    }
+  }
 }
