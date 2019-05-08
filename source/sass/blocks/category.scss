@@ -28,6 +28,26 @@
   &:active .category__icon {
     opacity: 0.3;
   }
+
+  &--toys {
+    background-color: #56c3b2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+
+  &--interior {
+    background-color: #63d1bb;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+    }
+  }
 }
 
 .category__name {
@@ -35,26 +55,6 @@
   margin: 0;
   font-size: 19px;
   line-height: 24px;
-}
-
-.category__link--toys {
-  background-color: #56c3b2;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #46c1ae;
-  }
-}
-
-.category__link--interior {
-  background-color: #63d1bb;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #59d5bc;
-  }
 }
 
 .category__icon {

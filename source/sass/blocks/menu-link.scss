@@ -80,38 +80,40 @@
 @media (min-width: $tablet-width) {
   .menu-link {
     max-width: none;
+
+    &--catalog {
+      margin-right: 36px;
+      padding: 18px 0;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &--knitting {
+      margin-right: 36px;
+      padding: 18px 0;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &--cart {
+      width: 265px;
+      text-align: right;
+      padding: 31px 0 33px;
+      border-left: 1px solid #ececec;
+    }
+
+    &--search {
+      width: 83px;
+      height: 88px;
+      padding: 0;
+      border-left: 1px solid #ececec;
+    }
   }
 
-  .menu-link--catalog {
-    margin-right: 36px;
-    padding: 18px 0;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .menu-link--knitting {
-    margin-right: 36px;
-    padding: 18px 0;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .menu-link--cart {
-    width: 265px;
-    text-align: right;
-    padding: 31px 0 33px;
-    border-left: 1px solid #ececec;
-  }
-
-  .menu-link--search {
-    width: 83px;
-    height: 88px;
-    padding: 0;
-    border-left: 1px solid #ececec;
-  }
-
-  .menu-link__text--search {
-    display: none;
+  .menu-link__text {
+    &--search {
+      display: none;
+    }
   }
 
   .menu-link__icon {
@@ -130,38 +132,40 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu-link--cart {
-    width: 267px;
-    margin: 0;
-    padding: 31px 2px 33px 0;
-    font-size: 17px;
-    line-height: 24px;
-  }
+  .menu-link {
+    &--cart {
+      width: 267px;
+      margin: 0;
+      padding: 31px 2px 33px 0;
+      font-size: 17px;
+      line-height: 24px;
+    }
 
-  .menu-link--catalog {
-    width: 184px;
-    margin: 0;
-    padding: 31px 0 33px;
-    font-size: 17px;
-  }
+    &--catalog {
+      width: 184px;
+      margin: 0;
+      padding: 31px 0 33px;
+      font-size: 17px;
+    }
 
-  .menu-link--knitting {
-    box-sizing: border-box;
-    width: 216px;
-    margin: 0;
-    padding: 31px 0 33px 34px;
-    font-size: 17px;
-  }
+    &--knitting {
+      box-sizing: border-box;
+      width: 216px;
+      margin: 0;
+      padding: 31px 0 33px 34px;
+      font-size: 17px;
+    }
 
-  .menu-link--new {
-    padding: 18px 0;
-    padding-left: 0;
-    font-size: 15px;
-  }
+    &--new {
+      padding: 18px 0;
+      padding-left: 0;
+      font-size: 15px;
+    }
 
-  .menu-link--sale {
-    padding: 18px 0;
-    padding-left: 0;
-    font-size: 15px;
+    &--sale {
+      padding: 18px 0;
+      padding-left: 0;
+      font-size: 15px;
+    }
   }
 }

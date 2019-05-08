@@ -43,6 +43,7 @@
   min-width: 75px;
   font-size: 15px;
   line-height: 30px;
+  vertical-align: top;
 
   &--field {
     width: 78px;
@@ -105,6 +106,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 457px;
+  border: 0;
 }
 
 .contacts__map-picture img {
@@ -281,8 +285,10 @@
     padding: 0;
   }
 
-  .contacts__data--field {
-    width: 78px;
+  .contacts__data {
+    &--field {
+      width: 78px;
+    }
   }
 
   .contacts__map-wrapper {
