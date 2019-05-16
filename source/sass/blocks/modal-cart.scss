@@ -50,9 +50,7 @@
 .modal-cart__group-name {
   display: block;
   padding: 0;
-  margin: 0;
-  margin-bottom: 26px;
-  text-align: center;
+  margin: 0 0 26px 63px;
 }
 
 .modal-cart__size-wrapper {
@@ -113,6 +111,7 @@
 
   .modal-cart__group-name {
     margin-bottom: 20px;
+    margin-left: 98px;
     font-size: 17px;
     line-height: 30px;
   }

@@ -16,7 +16,6 @@ menuButton.addEventListener("click", function (evt) {
   }
 });
 
-
 if (cart) {
   var cartPopup = document.querySelector(".modal-cart");
 
@@ -34,9 +33,10 @@ if (cart) {
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (cartPopup.classList.contains("modal-show")) {
+      if (cartPopup.classList.contains("modal-cart--show")) {
         evt.preventDefault();
-        cartPopup.classList.remove("modal-show");
+        cartPopup.classList.remove("modal-cart--show");
+        overlay.classList.add("visually-hidden");
       }
     }
   });
