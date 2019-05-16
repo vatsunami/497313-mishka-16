@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement("picture");
@@ -28,7 +29,7 @@
             </a>
           </div>
           <div class="page-header__toggle-wrapper">
-            <button class="page-header__toggle page-header__toggle--close" type="button">
+            <button class="page-header__toggle" type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
@@ -91,7 +92,7 @@
                 </div>
                 <div class="product__bottom">
                   <b class="product__price">1 200 руб.</b>
-                  <a class="product__cart" href="cart.html">
+                  <a class="product__cart js-button-cart" href="cart.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="product__icon-cart" height="19" width="20">
                       <use xlink:href="#icon-cart"></use>
@@ -120,7 +121,7 @@
                 </div>
                 <div class="product__bottom">
                   <b class="product__price">690 руб.</b>
-                  <a class="product__cart" href="cart.html">
+                  <a class="product__cart js-button-cart" href="cart.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="product__icon-cart" height="19" width="20">
                       <use xlink:href="#icon-cart"></use>
@@ -149,7 +150,7 @@
                 </div>
                 <div class="product__bottom">
                   <b class="product__price">1 500 руб.</b>
-                  <a class="product__cart" href="cart.html">
+                  <a class="product__cart js-button-cart" href="cart.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="product__icon-cart" height="19" width="20">
                       <use xlink:href="#icon-cart"></use>
@@ -245,12 +246,12 @@
         </a>
       </div>
     </footer>
-    <section class="modal-cart modal visually-hidden">
+    <section class="modal-cart modal">
       <div class="modal-cart__container">
         <div class="modal-cart__title-wrapper">
           <b class="modal-cart__title">Добавить в корзину</b>
         </div>
-        <form class="modal-cart__form" action="index.html" method="post">
+        <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal-cart__group">
             <legend class="modal-cart__group-name">Выберите размер:</legend>
             <div class="modal-cart__size-wrapper">
@@ -266,5 +267,7 @@
         </form>
       </div>
     </section>
+    <div class="overlay visually-hidden"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>

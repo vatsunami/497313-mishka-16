@@ -1,12 +1,17 @@
 .modal-cart {
-  position: absolute;
-  top: 1116px;
-  width: 100%;
+  position: fixed;
+  top: calc(50% - 168px);
+  left: calc(50% - 160px);
+  display: none;
+  z-index: 1000;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal-cart__container {
   width: 320px;
-  margin: 0 auto;
   box-sizing: border-box;
   padding: 30px 30px 46px;
   background-color: #ffffff;
@@ -88,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .modal-cart {
-    top: 1077px;
+    left: calc(50% - 284px);
   }
 
   .modal-cart__container {
@@ -98,7 +103,7 @@
   }
 
   .modal-cart__form {
-    padding: 0 79px;
+    padding: 0 78px;
   }
 
   .modal-cart__title {

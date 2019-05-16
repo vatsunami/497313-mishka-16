@@ -8,8 +8,14 @@
   background-color: #ffffff;
   list-style: none;
 
+  &--first,
+  &--second,
   &--third {
     display: none;
+  }
+
+  &--show {
+    display: block;
   }
 }
 

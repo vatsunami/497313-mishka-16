@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement("picture");
@@ -27,7 +29,7 @@
             </a>
           </div>
           <div class="page-header__toggle-wrapper">
-            <button class="page-header__toggle page-header__toggle--close" type="button">
+            <button class="page-header__toggle" type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
@@ -128,7 +130,7 @@
             </p>
             <div class="product-week__buy">
               <b class="product-week__price">Цена: 990 руб.</b>
-              <a class="product-week__button button" href="#">Заказать</a>
+              <a class="product-week__button button js-button-cart" href="#">Заказать</a>
             </div>
           </div>
         </div>
@@ -259,12 +261,12 @@
         </a>
       </div>
     </footer>
-    <section class="modal-cart modal visually-hidden">
+    <section class="modal-cart modal">
       <div class="modal-cart__container">
         <p class="modal-cart__title-wrapper">
           <b class="modal-cart__title">Добавить в корзину</b>
         </p>
-        <form class="modal-cart__form" action="index.html" method="post">
+        <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal-cart__group">
             <legend class="modal-cart__group-name">Выберите размер:</legend>
             <div class="modal-cart__size-wrapper">
@@ -280,5 +282,7 @@
         </form>
       </div>
     </section>
+    <div class="overlay visually-hidden">
+    <script src="js/script.js"></script>
   </body>
 </html>

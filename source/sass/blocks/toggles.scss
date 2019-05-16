@@ -11,7 +11,6 @@
   padding: 23px 0;
   background-color: #ffffff;
   border: 1px solid #ececec;
-  outline: none;
 
   &:hover .toggles__arrow,
   &:focus .toggles__arrow {
@@ -100,16 +99,17 @@
   }
 
   .toggles__button {
-    width: 87px;
+    width: auto;
     border: none;
+    padding: 23px 18.5px;
 
     &--prev {
-      padding-left: 20px;
+      // padding-left: 20px;
       border-right: none;
     }
 
     &--next {
-      padding-left: 18px;
+      // padding-left: 18px;
     }
   }
 }

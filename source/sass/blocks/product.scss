@@ -142,6 +142,10 @@
     display: flex;
     min-height: 334px;
     margin-bottom: 54px;
+
+    &:last-of-type {
+      margin-bottom: 53px;
+    }
   }
 
   .product__picture {
@@ -212,6 +216,10 @@
 
     &:nth-child(3n+3) {
       margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 54px;
     }
   }
 
