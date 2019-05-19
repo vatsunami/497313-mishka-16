@@ -135,7 +135,7 @@
   }
 }
 
-.form-group__radio-input:focus + .form-group__radio-label {
+.form-group__radio-input:checked + .form-group__radio-label:hover {
   &::before {
     box-shadow: inset 0 0 0 2px #63d1bb, inset 0 0 0 12px #ffffff, inset 0 0 0 20px #63d1bb;
   }
@@ -147,7 +147,7 @@
   }
 }
 
-.form-group__radio-input:checked + .form-group__radio-label:hover {
+.form-group__radio-input:checked:focus + .form-group__radio-label {
   &::before {
     box-shadow: inset 0 0 0 2px #63d1bb, inset 0 0 0 12px #ffffff, inset 0 0 0 20px #63d1bb;
   }
@@ -432,12 +432,6 @@
     }
   }
 
-  .form-group__radio-input:checked + .form-group__radio-label {
-    &::before {
-      box-shadow: inset 0 0 0 2px #000000, inset 0 0 0 15px #ffffff, inset 0 0 0 26px #63d1bb;
-    }
-  }
-
   .form-group__radio-input + .form-group__radio-label:hover {
     &::before {
       box-shadow: inset 0 0 0 2px #63d1bb;
@@ -445,6 +439,18 @@
   }
 
   .form-group__radio-input:checked + .form-group__radio-label:hover {
+    &::before {
+      box-shadow: inset 0 0 0 2px #63d1bb, inset 0 0 0 15px #ffffff, inset 0 0 0 26px #63d1bb;
+    }
+  }
+
+  .form-group__radio-input:checked + .form-group__radio-label {
+    &::before {
+      box-shadow: inset 0 0 0 2px #000000, inset 0 0 0 15px #ffffff, inset 0 0 0 26px #63d1bb;
+    }
+  }
+
+  .form-group__radio-input:checked:focus + .form-group__radio-label {
     &::before {
       box-shadow: inset 0 0 0 2px #63d1bb, inset 0 0 0 15px #ffffff, inset 0 0 0 26px #63d1bb;
     }

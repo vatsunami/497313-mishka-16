@@ -4,6 +4,12 @@ var menuSecond = document.querySelector(".page-header__menu--second");
 var cart = document.querySelectorAll(".js-button-cart");
 var overlay = document.querySelector(".overlay");
 
+window.addEventListener("load", function (evt) {
+  menuButton.classList.remove("page-header__toggle--close");
+  menuFirst.classList.remove("page-header__menu--show");
+  menuSecond.classList.remove("page-header__menu--show");
+});
+
 menuButton.addEventListener("click", function (evt) {
   if (menuButton.classList.contains("page-header__toggle--close")) {
     menuButton.classList.remove("page-header__toggle--close");
